@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Lighty by LightCube</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --border: #2a2d3a;
+      --text: #e2e4ec;
+      --text-muted: #8b8fa8;
+      --accent: #7c6aff;
+      --accent-cyan: #4dd9e0;
+      --green: #4ade80;
+      --red: #f87171;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 0;
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-mark {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+
+    .brand { display: flex; flex-direction: column; }
+    .brand-name { font-size: 18px; font-weight: 700; color: var(--text); letter-spacing: -0.3px; }
+    .brand-sub { font-size: 12px; color: var(--text-muted); }
+
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+
+    h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; color: var(--text); margin-bottom: 8px; }
+
+    .effective-date { font-size: 13px; color: var(--text-muted); margin-bottom: 40px; }
+
+    .summary-box {
+      background: var(--surface); border: 1px solid var(--border);
+      border-left: 3px solid var(--green); border-radius: 10px;
+      padding: 20px 24px; margin-bottom: 40px;
+    }
+
+    .summary-box h2 {
+      font-size: 14px; font-weight: 600; color: var(--green);
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px;
+    }
+
+    .summary-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .summary-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text); }
+    .check { color: var(--green); font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+    .cross { color: var(--red); font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+    section { margin-bottom: 36px; }
+
+    h2 {
+      font-size: 18px; font-weight: 600; color: var(--text);
+      margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+    }
+
+    p { color: var(--text-muted); margin-bottom: 14px; }
+    p:last-child { margin-bottom: 0; }
+    strong { color: var(--text); }
+
+    .permission-table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 13px; }
+    .permission-table th { text-align: left; padding: 8px 12px; background: var(--surface); color: var(--text-muted); font-weight: 500; border: 1px solid var(--border); }
+    .permission-table td { padding: 8px 12px; border: 1px solid var(--border); color: var(--text-muted); vertical-align: top; }
+    .permission-table td:first-child { color: var(--accent-cyan); font-family: 'Courier New', monospace; white-space: nowrap; }
+
+    .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+    .contact-box h2 { border-bottom: none; padding-bottom: 0; margin-bottom: 8px; }
+    .contact-email { color: var(--accent-cyan); font-family: 'Courier New', monospace; font-size: 14px; }
+
+    footer { border-top: 1px solid var(--border); padding: 20px 24px; text-align: center; font-size: 12px; color: var(--text-muted); }
+    footer .footer-inner { max-width: 760px; margin: 0 auto; }
+
+    a { color: var(--accent-cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-mark">L</div>
+      <div class="brand">
+        <span class="brand-name">Lighty</span>
+        <span class="brand-sub">by LightCube</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective date: March 28, 2026 &middot; Version 2.0</p>
+
+    <div class="summary-box">
+      <h2>The Short Version</h2>
+      <ul class="summary-list">
+        <li><span class="check">&#10003;</span> <span>All processing happens <strong>locally on your machine</strong>. Nothing is sent to external servers.</span></li>
+        <li><span class="check">&#10003;</span> <span>Lighty does <strong>not collect</strong> any personal data, browsing history, or page content.</span></li>
+        <li><span class="check">&#10003;</span> <span>The bridge server runs <strong>only on localhost</strong> (127.0.0.1). It is not accessible from the internet.</span></li>
+        <li><span class="cross">&#10007;</span> <span>No analytics. No telemetry. No crash reports. No usage tracking of any kind.</span></li>
+        <li><span class="cross">&#10007;</span> <span>No account required. No login. No email address collected.</span></li>
+        <li><span class="cross">&#10007;</span> <span>No cloud. No third-party services. No advertising networks.</span></li>
+      </ul>
+    </div>
+
+    <section>
+      <h2>1. What Lighty Does</h2>
+      <p>Lighty is a Chrome extension that runs a local HTTP bridge server on your machine (default port 3456). This bridge allows local software — such as scripts, automation tools, or AI coding assistants — to control your Chrome browser via HTTP API calls.</p>
+      <p>The extension acts as a relay between the local bridge server and Chrome's extension APIs. It does not communicate with any server outside your computer.</p>
+    </section>
+
+    <section>
+      <h2>2. Data We Do Not Collect</h2>
+      <p>Lighty collects <strong>no data whatsoever</strong>. Specifically:</p>
+      <p><strong>Browsing data:</strong> Lighty does not read, record, or transmit your browsing history, bookmarks, cookies, passwords, or any page content you visit.</p>
+      <p><strong>Personal information:</strong> Lighty does not collect your name, email address, IP address, location, or any other personally identifiable information.</p>
+      <p><strong>Usage data:</strong> Lighty does not record which features you use, how often you use the extension, what commands you send to the bridge, or any behavioral metrics.</p>
+      <p><strong>Automation data:</strong> When you use the bridge API to automate browser actions, the content of those actions (URLs navigated, text typed, elements clicked) is never logged or transmitted anywhere. It is processed ephemerally in memory and discarded.</p>
+    </section>
+
+    <section>
+      <h2>3. Local Storage</h2>
+      <p>Lighty uses Chrome's <code>storage.local</code> API solely to persist your configuration preferences (such as the bridge server port number). This data is stored on your local device only, is never synced to Google's servers, and can be cleared at any time by removing the extension.</p>
+    </section>
+
+    <section>
+      <h2>4. Network Access</h2>
+      <p>The bridge server binds exclusively to <strong>127.0.0.1 (localhost)</strong>. It is not accessible from the local network, the internet, or any other machine. No outbound connections are made by Lighty to any external host.</p>
+    </section>
+
+    <section>
+      <h2>5. Chrome Permissions Explained</h2>
+      <table class="permission-table">
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Why it's needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>activeTab</td>
+            <td>Required to interact with the currently active tab when the bridge receives API commands.</td>
+          </tr>
+          <tr>
+            <td>scripting</td>
+            <td>Required to inject content scripts for JavaScript evaluation and DOM interaction.</td>
+          </tr>
+          <tr>
+            <td>tabs</td>
+            <td>Required to open, close, navigate, and query tabs via the API.</td>
+          </tr>
+          <tr>
+            <td>tabGroups</td>
+            <td>Used to organize automation tabs into a named group for easy identification.</td>
+          </tr>
+          <tr>
+            <td>storage</td>
+            <td>Stores your port configuration locally. Never synced externally.</td>
+          </tr>
+          <tr>
+            <td>debugger</td>
+            <td>Required for trusted mouse events (click, drag) and JavaScript evaluation that bypasses Content Security Policy. This enables Lighty to interact with sites that restrict programmatic clicks.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>6. Third-Party Services</h2>
+      <p>Lighty does not integrate with or transmit data to any third-party service, analytics platform, advertising network, or cloud provider. There are no third-party SDKs, libraries, or trackers embedded in the extension.</p>
+    </section>
+
+    <section>
+      <h2>7. Children's Privacy</h2>
+      <p>Lighty is a developer tool not directed at children. We do not knowingly collect information from anyone under the age of 13. Since we collect no data from any user, no special measures are needed.</p>
+    </section>
+
+    <section>
+      <h2>8. Changes to This Policy</h2>
+      <p>If we ever update this privacy policy, we will update the effective date at the top of this page and increment the version number. Given that Lighty collects no data, we do not anticipate material changes to this policy.</p>
+    </section>
+
+    <div class="contact-box">
+      <h2>9. Contact</h2>
+      <p>If you have questions about this privacy policy or how Lighty works, you can reach LightCube at:</p>
+      <p class="contact-email">privacy@lightcube.dev</p>
+      <p style="margin-top: 10px; font-size: 13px;">We typically respond within 48 hours.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      &copy; 2026 LightCube &middot; Lighty Extension &middot; Privacy Policy
+    </div>
+  </footer>
+
+</body>
+</html>
